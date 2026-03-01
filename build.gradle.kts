@@ -12,7 +12,7 @@ springBoot {
 
 checkstyle {
 	toolVersion = "10.21.3"
-	config = resources.text.fromArchiveEntry(configurations.checkstyle, "google_checks.xml")
+	configFile = file("${project.rootDir}/config/checkstyle/google_checks.xml")
     maxErrors = 0
     maxWarnings = 0
 }
